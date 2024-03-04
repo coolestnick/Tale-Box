@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 34">
+<rect width="32" height="32" rx="4.8" fill="#7E3DFF"/>
+<rect width="32" height="32" rx="4.8" fill="url(#paint0_radial_30_369)"/>
+<g id="Group 1">
+<rect id="Rectangle 1" x="12.8" y="20" width="6.4" height="6.4" rx="2" fill="white"/>
+</g>
+<g id="Group 2">
+<rect id="Rectangle 1_2" x="6.3999" y="5.59998" width="12.8" height="6.4" rx="2" fill="white"/>
+</g>
+<g id="Group 4">
+<rect id="Rectangle 1_3" x="12.8" y="12.8" width="12.8" height="6.4" rx="2" fill="white"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_30_369" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.1074 16) rotate(90) scale(16)">
+<stop stop-color="#DF3DFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#DF3DFF" stop-opacity="0.28"/>
+</radialGradient>
+</defs>
+</svg>

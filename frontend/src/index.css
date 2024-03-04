@@ -1,0 +1,213 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  h1 {
+    @apply md:text-5xl text-6xl font-medium pb-3;
+  }
+
+  button {
+    @apply border text-white font-medium border-white/20 rounded-[30px] px-5 py-2.5 disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  p {
+    @apply text-[#D2D0DD] text-base font-medium;
+  }
+
+  label {
+    @apply text-[#D2D0DD] text-base font-medium;
+  }
+
+  input,
+  select,
+  select {
+    @apply text-[#D2D0DD] mb-6 border-white/40 border py-3 bg-transparent rounded-[10px] px-4 w-full focus-visible:outline-0;
+  }
+}
+
+@layer components {
+  .toolkit-icon {
+    @apply p-[10px];
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.95) 23.96%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1.2 !important;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  background: radial-gradient(
+    50% 50% at 50.34% 50%,
+    rgba(168, 128, 255, 0) 0%,
+    rgba(168, 128, 255, 0.15) 100%
+  );
+  box-shadow: 0px 0px 0px 1px #2d2641, 0px 0px 4px 2px rgba(168, 128, 255, 0.1),
+    0px 0px 4px 4px rgba(168, 128, 255, 0.1) inset;
+}
+
+.toolkit-icon {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: fit-content;
+  background: radial-gradient(
+      50% 50% at 50.34% 50%,
+      rgba(168, 128, 255, 0) 0%,
+      rgba(168, 128, 255, 0.15) 100%
+    ),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 0px 1px #2d2641, 0px 0px 4px 2px rgba(168, 128, 255, 0.1),
+    0px 0px 4px 4px rgba(168, 128, 255, 0.1) inset;
+}
+
+.mt-8 .toolkit-icon {
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.steps {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: radial-gradient(
+      49.87% 49.87% at 50% 50.13%,
+      rgba(168, 128, 255, 0.17) 0%,
+      rgba(168, 128, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 0px 1px #2d2641, 0px 0px 4px 2px rgba(168, 128, 255, 0.1),
+    0px 0px 4px 4px rgba(168, 128, 255, 0.1) inset;
+}
+
+.grid-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.footer {
+  border-top: 1px solid;
+  border-image: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 51.04%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    repeat 1;
+}
+
+.story p {
+  font-family: "Crimson Text", serif;
+}
+
+.body-text {
+  left: 48px;
+  max-width: calc(50% - 85px);
+}
+
+.story-image {
+  right: 48px;
+  max-width: calc(50% - 85px);
+}
+
+.steps-inner {
+  background: url("./assets/grid-bg.png") repeat;
+}
+
+.bg-purple {
+  background: radial-gradient(
+      49.87% 49.87% at 50% 50.13%,
+      rgba(168, 128, 255, 0.17) 0%,
+      rgba(168, 128, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 0px 1px #2d2641, 0px 0px 4px 2px rgba(168, 128, 255, 0.1),
+    0px 0px 4px 4px rgba(168, 128, 255, 0.1) inset;
+}
+
+input,
+select {
+  box-shadow: 0px 0px 0px 1px #2d2641, 0px 0px 4px 2px rgba(168, 128, 255, 0.1),
+    0px 0px 4px 4px rgba(168, 128, 255, 0.1) inset;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-image: none;
+}
+
+.select {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin-bottom: 24px;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 12px 16px;
+  color: #d2d0dd;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select::after {
+  content: url("./assets/icons/caret-left.svg");
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  height: 24px;
+  right: 16px;
+  background: transparent;
+  pointer-events: none;
+}
+
+option {
+  background-color: #2d2641;
+}
+
+.stories > div {
+  max-width: calc(33.33% - 32px);
+  /* flex: 1; */
+  background: radial-gradient(
+      49.87% 49.87% at 50% 50.13%,
+      rgba(168, 128, 255, 0.17) 0%,
+      rgba(168, 128, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 0px 1px #2d2641, 0px 0px 4px 2px rgba(168, 128, 255, 0.1),
+    0px 0px 4px 4px rgba(168, 128, 255, 0.1) inset;
+}
