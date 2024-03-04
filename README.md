@@ -8,7 +8,7 @@
 
 TaleBlox is your portal to boundless creativity. Craft compelling narratives and effortlessly transform them into captivating NFT art. Reward authors, explore limitless storytelling possibilities, and celebrate the fusion of words and visuals in the world of TaleBlox.
 
-We bridges storytelling and art like never before. With AI-powered enhancements and Leonardo AI, your stories evolve into stunning NFT art pieces. Dive into the world of TaleBlox, where narratives extend beyond words and art leaps off the canvas, all within a vibrant NFT storytelling community.
+This bridges storytelling and art like never before. With AI-powered enhancements and Leonardo AI, your stories evolve into stunning NFT art pieces. Dive into the world of TaleBlox, where narratives extend beyond words and art leaps off the canvas, all within a vibrant NFT storytelling community.
 
 # Features
 
