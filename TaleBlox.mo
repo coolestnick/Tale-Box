@@ -133,3 +133,63 @@ actor class TaleBlox() = this {
     return stories;
   };
 };
+
+
+public async createStory(
+  id: string,
+  title: string,
+  prompt: string,
+  content: string,
+  metadataUrl: string
+) {
+  const author = Principal.fromActor(this);
+  const newStory: Story = {
+    id,
+    title,
+    initialAuthor: author.toString(),
+    pageCount: 1,
+    pages: [
+      {
+        id: 1,
+        author: author.toString(),
+        prompt,
+        content,
+        metadataUrl,
+      },
+    ],
+    owner: author.toString(),
+  };
+
+  this.stories = [...this.stories, newStory];
+}
+
+public async contributeToStory(
+  storyId: string,
+  prompt: string,
+  content: string,
+  metadataUrl: string
+) {
+  const author = Principal.fromActor(this);
+  const existingStory = this.stories.find((story) => story.id === storyId);
+
+  if (!existingStory) {
+    console.log('Story not found.');
+    return;
+  }
+
+  const newPage: Page = {
+    id: existingStory.pages.length + 1,
+    author: author.toString(),
+    prompt,
+    content,
+    metadataUrl,
+  };
+
+  const updatedStory: Story = {
+    ...existingStory,
+    pageCount: existingStory.pageCount + 1,
+    pages: [...existingStory.pages, newPage],
+  };
+
+  this.updateStory(storyId, updatedStory);
+}

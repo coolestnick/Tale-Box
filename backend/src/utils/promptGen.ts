@@ -25,3 +25,4 @@ export const promptChatGPT = async (
     return `An error occurred: ${err.message}`;
   }
 };
+

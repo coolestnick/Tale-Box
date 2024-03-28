@@ -45,7 +45,7 @@ This bridges storytelling and art like never before. With AI-powered enhancement
 First, you need to clone the repository
 
 ```
-https://github.com/Destiny-01/TaleBlox-ICP
+https://github.com/coolestnick/Tale-Box
 ```
 
 2. Install Dependencies
